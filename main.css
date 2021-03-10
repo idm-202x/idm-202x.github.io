@@ -311,8 +311,7 @@ body{
 }
 
 .service .row .image img{
-  width:50vw;
-  height:55vh;
+  height: 500px;
 }
 
 .service .row .content{
