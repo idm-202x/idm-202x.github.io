@@ -130,8 +130,14 @@ body{
   color:#fff;
 }
 
+.header .navbar .active{
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+}
+
 .header .navbar ul li a:hover{
-  color:#ccc;
+  color:#000000;
 }
 
 .header .fa-bars{
