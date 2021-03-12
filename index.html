@@ -39,10 +39,10 @@
 
     <!-- home section starts  -->
 
-    <section id="home" class="home">
+    <!--<section id="home" class="home">
       <h1 class="banner ">IDM-2021</h1>
-      <!--<h3 class="slogan">you have a vision. we have a team to get you there</h3>
-      <a href="#"><button>get started</button></a>-->
+      <h3 class="slogan">you have a vision. we have a team to get you there</h3>
+      <a href="#"><button>get started</button></a>
 
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
@@ -50,11 +50,84 @@
 
       <div class="fas fa-cog nut1"></div>
       <div class="fas fa-cog nut2"></div>
-    </section>
+    </section>-->
 
 
     <!-- home section ends -->
+    <!-- ################################## COUNTDOWN CLOCK #########################################3 -->
+      <div class="overlay"></div>
+      <div class="wrapper">
+        <div class="">
+          <h1 class="title"><span>IDM COUNTDOWN</span>2021</h1>
+          <div class="countdown-container">
+            <div>
+              <p id="days" class="big-text">0</p>
+              <span>Days</span>
+            </div>
+            <div>
+              <p id="hours" class="big-text">0</p>
+              <span>Hours</span>
+            </div>
+            <div>
+              <p id="min" class="big-text">0</p>
+              <span>Min</span>
+            </div>
+            <div>
+              <p id="sec" class="big-text">0</p>
+              <span>Sec</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animation-area">
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    <!-- </div> -->
 
+    <script>
+      // ######################################  JAVASCRIPT FILES #####################################
+
+      // function loader() {
+      //   document.querySelector(".get-1").style.display = "none";
+      //   document.querySelector(".get-2").style.display = "block";
+      // }
+      // setTimeout(loader, 3000);
+
+      let daysItem = document.querySelector("#days");
+      let hoursItem = document.querySelector("#hours");
+      let minItem = document.querySelector("#min");
+      let secItem = document.querySelector("#sec");
+
+      let countDown = () => {
+        let futureDate = new Date("21 March 2021");
+        let currentDate = new Date();
+        let myDate = futureDate - currentDate;
+
+        let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
+
+        let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
+
+        let min = Math.floor(myDate / 1000 / 60) % 60;
+
+        let sec = Math.floor(myDate / 1000) % 60;
+
+        daysItem.innerHTML = days;
+        hoursItem.innerHTML = hours;
+        minItem.innerHTML = min;
+        secItem.innerHTML = sec;
+      };
+
+      countDown();
+
+      setInterval(countDown, 1000);
+    </script>
     <!-- abuout section starts  -->
 
     <!--<section id="about" class="about">
