@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-#more1 {display: none;}
-:root{
-  /* --color:#402fc2; */
-  background: linear-gradient(to left, #390888, #08000c);
-
-}
-#more2 {display: none;}
-:root{
-  /* --color:#402fc2; */
-  background: linear-gradient(to left, #390888, #08000c);
-
-}
-#more3 {display: none;}
-:root{
-  /* --color:#402fc2; */
-  background: linear-gradient(to left, #390888, #08000c);
-
-}
-
 *{
   font-family: 'Poppins', sans-serif;
   margin:0; padding:0;
@@ -33,6 +14,7 @@ html{
 
 body{
   overflow-x: hidden;
+  background-color:  #3AAFA9;
   
 }
 
@@ -41,7 +23,7 @@ body{
   padding-top: 6rem;
   display: inline-block;
   font-size: 3.5rem;
-  color:var(--color);
+  color: #FEFFFF;
   position: relative;
   letter-spacing: .2rem;
 }
@@ -107,7 +89,7 @@ body{
 
 .header .logo{
   font-size: 2.5rem;
-  color:#fff;
+  color: #FEFFFF;
 }
 
 .header .logo img{
@@ -128,17 +110,17 @@ body{
 
 .header .navbar ul li a{
   font-size: 2rem;
-  color:#fff;
+  color:#FEFFFF;
 }
 
 .header .navbar .active{
-  background-color: #fff;
+  text-decoration: underline;
   border-radius: 5px;
-  color: #000;
+  color: #DEF2F1;
 }
 
 .header .navbar ul li a:hover{
-  color:#000000;
+  color:#DEF2F1;
 }
 
 .header .fa-bars{
@@ -157,7 +139,7 @@ body{
 .home{
   min-height: 100vh;
   width: 100vw;
-  background:linear-gradient(purple, var(--color));
+  background: #3AAFA9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,14 +150,14 @@ body{
   overflow: hidden !important;
 }
 .banner1{
-  color:#fff;
+  color: #FEFFFF;
   text-align: center;
   font-size: 5.25rem;
   text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
 }
 
 .banner2{
-  color:#fff;
+  color: #17252A;
   text-align: center;
   font-size: 2.5rem;
   text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
@@ -184,7 +166,7 @@ body{
 .content p{
   font-size: 1.5rem;
   text-align: justify;
-  color: #FFFFFF;
+  color: #17252A;
   padding:1rem 0;
 }
 
@@ -240,8 +222,8 @@ body{
  .fa-cog{
   position: absolute;
   font-size: 30rem;
-  opacity: .15;
-  color:#fff;
+  opacity: 0.3;
+  color: #2B7A7A;
   animation: rotate 10s linear infinite;
 }
 
@@ -281,12 +263,12 @@ body{
 
 .about .row .content h3{
   font-size: 3rem;
-  color: var(--color);
+  color: #17252A;
 }
 
 .about .row .content p{
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #FEFFFF;
   padding:1rem 0;
 }
 
@@ -327,6 +309,7 @@ body{
 
 .service .row .image img{
   height: 500px;
+  border: 5px solid #2B7A78;
 }
 
 .service .row .content{
@@ -336,12 +319,12 @@ body{
 
 .service .row .content h3{
   font-size: 3rem;
-  color:var(--color);
+  color: #17252A;
 }
 
 .service .row .content p{
   font-size: 1.5rem;
-  color:#333;
+  color:#FEFFFF;
   padding:1rem 0;
 }
 
@@ -349,7 +332,6 @@ body{
   min-height: 100vh;
   width:100vw;
   text-align: center;
-  background-color: #222;;
 }
 
 .team .heading{
@@ -370,7 +352,7 @@ body{
 .team .row .card{
   height:35rem;
   width:25rem;
-  background:#fff;
+  background:#2B7A78;
   text-align: center;
   margin:7rem 2rem;
   position: relative;
@@ -394,7 +376,7 @@ body{
 
 .team .row .card .info h3{
   font-size: 2rem;
-  color:#333;
+  color:#FEFFFF;
 }
 
 .team .row .card .info span{
@@ -406,7 +388,7 @@ body{
   margin-top: 4rem;
   padding:0 1rem;
   font-size: 2rem;
-  color:#333;
+  color:#FEFFFF;
 }
 
 .team .row .card .info .icons a:hover{
@@ -428,7 +410,7 @@ body{
 }
 
 .team .row .card::after{
-  background:#ccc;
+  background:#17252A;
   bottom:-3rem; left: -4rem;
 }
 
@@ -455,6 +437,10 @@ body{
   padding:0 5rem;
 }
 
+::placeholder{
+  color: #17252A;
+}
+
 .contact .row .form-container input, textarea{
   outline: none;
   border:none;
@@ -475,10 +461,14 @@ body{
 
 .contact .row .form-container .inputBox input[type="text"]{
   width: 49%;
+  color: #17252A;
+  background-color: #2B7A78;
 }
 
 .contact .row .form-container input[type="email"]{
   width: 100%;
+  color: #17252A;
+  background-color: #2B7A78;
 }
 
 .contact .row .form-container textarea{
@@ -486,14 +476,17 @@ body{
   height:20rem;
   padding:1rem; 
   resize: none;
+  color: #17252A;
+  background-color: #2B7A78;
 }
 
 .contact .row .form-container input[type="submit"]{
   background-color: var(--color);
-  color:#fff;
+  color: #17252A;
   cursor: pointer;
   height:4rem; 
-  width: 10rem;;
+  width: 10rem;
+  background-color: #2B7A78;
 }
 
 .contact .row .form-container input[type="submit"]:hover{
@@ -670,6 +663,7 @@ body{
 
   .service .row .image img{
     width: 100vw;
+    border: 5px solid #2B7A78;
   }
 
   .service .row .content{
@@ -726,7 +720,6 @@ body{
   left:0;
   right:0;
   bottom:0;
-  background: linear-gradient(to left, #390888, #08000c);
   width:100%;
   height:100%;
   z-index:-1;
@@ -741,7 +734,7 @@ body{
 .title{
   margin:10px;
   text-align:center;
-  color:#fff;
+  color:#FEFFFF;
   width:100%;
   letter-spacing:2px;
   font-size: 1rem;
