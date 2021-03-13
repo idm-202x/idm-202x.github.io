@@ -110,8 +110,9 @@ body{
   color:#fff;
 }
 
-.header .logo i{
-  padding:0 .5rem;
+.header .logo img{
+  width: 40px;
+  vertical-align: bottom;
 }
 
 .header .navbar ul{
@@ -162,21 +163,29 @@ body{
   justify-content: center;
   flex-flow: column;
   text-align: center;
-  padding:0 1rem;
+  padding:1rem;
   position: relative;
   overflow: hidden !important;
 }
-
-.home .banner{
+.banner1{
   color:#fff;
-  font-size: 8rem;
+  text-align: center;
+  font-size: 5.25rem;
   text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
 }
 
-.home .slogan{
-  color:#eee;
+.banner2{
+  color:#fff;
+  text-align: center;
   font-size: 2.5rem;
-  font-weight: 400;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.content p{
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #FFFFFF;
+  padding:1rem 0;
 }
 
 .home button{
@@ -228,7 +237,7 @@ body{
   }
 }
 
-.home .fa-cog{
+ .fa-cog{
   position: absolute;
   font-size: 30rem;
   opacity: .15;
@@ -236,11 +245,11 @@ body{
   animation: rotate 10s linear infinite;
 }
 
-.home .nut1{
+.nut1{
   top:10%; left: -15rem;
 }
 
-.home .nut2{
+.nut2{
   bottom:23%; right: -13rem;
   animation-direction: reverse;
 }
@@ -735,7 +744,7 @@ body{
   color:#fff;
   width:100%;
   letter-spacing:2px;
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 5.5rem;
   animation: 2s ease-out 0s 1 slideLeft;
 }
@@ -751,15 +760,23 @@ body{
 
 .title span{
   display:block;
-  font-size:6rem;
+  font-size:3rem;
   /* letter-spacing:2rem; */
 }
+
+.wrapper0{
+  margin-top: 225px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
 .wrapper{
   display:flex;
   align-items:center;
   justify-content:center;
   flex-wrap: wrap;
-  min-height:100vh;
+  min-height:80vh;
 }
 
 .countdown-container > div{
