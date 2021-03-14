@@ -441,8 +441,7 @@ body{
 }
 
 .contact .row .image img{
-  height: 70vh;
-  width:50vw;
+  width: 700px;
 }
 
 .contact .row .form-container{
