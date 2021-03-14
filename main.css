@@ -181,6 +181,10 @@ body{
   padding:1rem 0;
 }
 
+.content p a{
+  color: #17252A;
+}
+
 .home button{
   height: 4rem;
   width: 18rem;
@@ -234,7 +238,6 @@ body{
   position: absolute;
   font-size: 30rem;
   opacity: 0.3;
-  color: #2B7A7A;
   animation: rotate 10s linear infinite;
 }
 
@@ -403,7 +406,7 @@ body{
 }
 
 .team .row .card .info .icons a:hover{
-  color:var(--color);
+  color: #17252A;
 }
 
 .team .row .card::before, .team .row .card::after{
