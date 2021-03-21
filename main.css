@@ -325,6 +325,10 @@ body{
   height: 500px;
   border: 7px solid #2B7A78;
 }
+.service .row .image2 img{
+  height: 800px;
+  border: 7px solid #2B7A78;
+}
 
 .service .row .content{
   text-align: left;
@@ -676,6 +680,10 @@ body{
   .service .row .image img{
     width: 100vw;
     height: 100vw;
+    border: 5px solid #2B7A78;
+  }
+  .service .row .image2 img{
+    width: 120vw;
     border: 5px solid #2B7A78;
   }
 
